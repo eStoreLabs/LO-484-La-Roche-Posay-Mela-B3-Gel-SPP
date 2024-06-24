@@ -1,21 +1,27 @@
-@import url("https://use.typekit.net/cnc6cbd.css");
+@import url('https://use.typekit.net/cnc6cbd.css');
 :root {
   --es-blue-accent: #009fe3;
 }
 
 /* Locator Web Light */
 @font-face {
-  font-family: "LocatorWeb";
-  src: url("../fonts/LocatorWebLight/LocatorWebLight.eot");
-  src: url("../fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("../fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
+  font-family: 'LocatorWeb';
+  src: url('../fonts/LocatorWebLight/LocatorWebLight.eot');
+  src: url('../fonts/LocatorWebLight/LocatorWebLight.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/LocatorWebLight/LocatorWebLight.woff2') format('woff2'),
+    url('../fonts/LocatorWebLight/LocatorWebLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 /* Locator Web Medium */
 @font-face {
-  font-family: "LocatorWeb";
-  src: url("../fonts/LocatorWebMedium/LocatorWebMedium.eot");
-  src: url("../fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("../fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
+  font-family: 'LocatorWeb';
+  src: url('../fonts/LocatorWebMedium/LocatorWebMedium.eot');
+  src: url('../fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/LocatorWebMedium/LocatorWebMedium.woff2') format('woff2'),
+    url('../fonts/LocatorWebMedium/LocatorWebMedium.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -129,13 +135,10 @@
   max-width: 350px;
   transition: 500ms ease-in-out;
 }
-#la-roche.la-roche .es-kv__packshot img:hover {
-  scale: 1.15;
-}
 #la-roche.la-roche .es-effects {
   padding-top: 20px;
   padding-bottom: 50px;
-  background-image: url("../images/effects-bg.png");
+  background-image: url('../images/effects-bg.png');
   background-repeat: no-repeat;
   background-position: center right;
   background-size: initial;
@@ -219,6 +222,8 @@
   line-height: 1.2;
   margin-top: 12px;
   margin-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #la-roche.la-roche .es-results {
   background-color: #4d237f;
@@ -260,7 +265,7 @@
   margin-right: 10px;
   height: 30px;
   min-width: 40px;
-  content: "";
+  content: '';
   background: url(../images/check-icon.png) no-repeat 0 0;
   background-size: 25px 25px;
 }
@@ -358,16 +363,16 @@
   flex-direction: column;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 #la-roche.la-roche .es-effect__item {
   display: flex;
   align-items: center;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   row-gap: 10px;
   min-width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #la-roche.la-roche .es-effect__item-title {
   font-family: Montserrat, sans-serif;
@@ -420,7 +425,7 @@
   font-size: 13px;
 }
 #la-roche.la-roche .es-use ol li::marker {
-  content: counter(my-counter) ".";
+  content: counter(my-counter) '.';
   font-weight: 400;
   font-size: 12.8px;
   font-family: Montserrat, sans-serif;
@@ -609,7 +614,7 @@
     max-width: 65%;
   }
   #la-roche.la-roche .es-obligations {
-    margin-top: 220px;
+    margin-top: 420px;
     background-image: url(../images/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -635,6 +640,9 @@
   #la-roche.la-roche .es-cross__single img {
     max-width: 20%;
     height: auto;
+  }
+  #la-roche.la-roche .es-cross__single .es-cross__img--3 {
+    max-width: 25%;
   }
   #la-roche.la-roche .es-cross__name {
     text-align: left;
@@ -713,6 +721,12 @@
   }
 }
 @media screen and (min-width: 985px) {
+  #la-roche.la-roche .es-obligations {
+    margin-top: 220px;
+  }
+  #la-roche.la-roche .es-kv__packshot img:hover {
+    scale: 1.15;
+  }
   #la-roche.la-roche .es-kv {
     padding-top: 0;
     padding-right: 0;
@@ -836,4 +850,4 @@
   #la-roche.la-roche .es-cross__single--3 img {
     height: 340px;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
